@@ -14,8 +14,9 @@
     ],
     "require": {
         "php": "^7.1",
-
-        "sylius/sylius": "^1.0.4"
+        "sylius/sylius": "^1.0.4",
+        "toropay/payapi-php": "1.0.x-dev",
+        "toropay/payum": "1.0.x-dev"
     },
     "require-dev": {
         "phpspec/phpspec": "^3.2",
