@@ -24,7 +24,7 @@
             <argument>%toropay.firewall%</argument>
             <tag name="payum.action" factory="toropay"/>
         </service>
-        <service class="Toro\Pay\ToroPay">
+        <service public="true" id="toropay" class="Toro\Pay\ToroPay">
             <tag name="payum.api" factory="toropay" alias="toropay-api"/>
             <factory method="createApi">
                 <service class="Toro\SyliusToroPayPlugin\Factory\ApiBuilderFactory">
