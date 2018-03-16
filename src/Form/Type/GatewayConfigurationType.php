@@ -63,6 +63,12 @@ final class GatewayConfigurationType extends AbstractType
             ->add('toropay_sandbox', CheckboxType::class, [
                 'label' => 'toro.form.gateway_configuration.toropay_sandbox',
             ])
+            ->add('toropay_base_url', UrlType::class, [
+                'label' => 'toro.form.gateway_configuration.toropay_base_url',
+            ])
+            ->add('toropay_sandbox_url', UrlType::class, [
+                'label' => 'toro.form.gateway_configuration.toropay_sandbox_url',
+            ])
         ;
     }
 }

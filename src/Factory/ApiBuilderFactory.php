@@ -33,6 +33,8 @@ class ApiBuilderFactory
         $config = $config->getConfig();
 
         return new ToroPay([
+            'baseUrl' => $config['toropay_base_url'],
+            'sandboxUrl' => $config['toropay_sandbox_url'],
             'sandbox' => $config['toropay_sandbox'],
             'clientId' => $config['toropay_client_id'],
             'clientSecret' => $config['toropay_client_secret'],
